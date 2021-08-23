@@ -1,0 +1,46 @@
+-- Table: public.vacinacao_base
+
+-- DROP TABLE public.vacinacao_base;
+
+CREATE TABLE IF NOT EXISTS public.vacinacao_base
+(
+    document_id text COLLATE pg_catalog."default",
+    paciente_id text COLLATE pg_catalog."default",
+    paciente_idade text COLLATE pg_catalog."default",
+    paciente_datanascimento text COLLATE pg_catalog."default",
+    paciente_enumsexobiologico text COLLATE pg_catalog."default",
+    paciente_racacor_codigo text COLLATE pg_catalog."default",
+    paciente_racacor_valor text COLLATE pg_catalog."default",
+    paciente_endereco_coibgemunicipio text COLLATE pg_catalog."default",
+    paciente_endereco_copais text COLLATE pg_catalog."default",
+    paciente_endereco_nmmunicipio text COLLATE pg_catalog."default",
+    paciente_endereco_nmpais text COLLATE pg_catalog."default",
+    paciente_endereco_uf text COLLATE pg_catalog."default",
+    paciente_endereco_cep text COLLATE pg_catalog."default",
+    paciente_nacionalidade_enumnacionalidade text COLLATE pg_catalog."default",
+    estabelecimento_valor text COLLATE pg_catalog."default",
+    estabelecimento_razaosocial text COLLATE pg_catalog."default",
+    estalecimento_nofantasia text COLLATE pg_catalog."default",
+    estabelecimento_municipio_codigo text COLLATE pg_catalog."default",
+    estabelecimento_municipio_nome text COLLATE pg_catalog."default",
+    estabelecimento_uf text COLLATE pg_catalog."default",
+    vacina_grupoatendimento_codigo text COLLATE pg_catalog."default",
+    vacina_grupoatendimento_nome text COLLATE pg_catalog."default",
+    vacina_categoria_codigo text COLLATE pg_catalog."default",
+    vacina_categoria_nome text COLLATE pg_catalog."default",
+    vacina_lote text COLLATE pg_catalog."default",
+    vacina_fabricante_nome text COLLATE pg_catalog."default",
+    vacina_fabricante_referencia text COLLATE pg_catalog."default",
+    vacina_dataaplicacao text COLLATE pg_catalog."default",
+    vacina_descricao_dose text COLLATE pg_catalog."default",
+    vacina_codigo text COLLATE pg_catalog."default",
+    vacina_nome text COLLATE pg_catalog."default",
+    sistema_origem text COLLATE pg_catalog."default",
+    data_importacao_rnds text COLLATE pg_catalog."default",
+    id_sistema_origem text COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.vacinacao_base
+    OWNER to postgres;
